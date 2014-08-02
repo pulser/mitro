@@ -52,3 +52,50 @@ Notes
 We can't use symlinks to edit files in place because Chrome does not load symlinked resources:
 
 http://code.google.com/p/chromium/issues/detail?id=27185
+
+
+Make Configurations
+===================
+
+There are multiple build configurations set up (see configuration files of the form `X.release.conf` or similar. Select the appropriate release type through the appropriate make command
+
+Build the "release" configuration for Chrome (output as a CRX), and attempt to do some testing
+
+    make
+
+Build the "release" configuration for Chrome (output as a folder)
+
+    make release
+
+Build the "debug" configuration for Chrome (output as a folder)
+
+    make debug
+    
+Build the "release" configuration for Firefox (output as XPI)
+
+    make firefox
+
+Build the "debug" configuration for Firefox (output as XPI)
+
+    make firefox-debug
+    
+Build the "release" configuration for Safari (output as a folder)
+
+    make safari
+
+Build the "debug" configuration for Safari (output as a folder)
+
+    make safari-debug
+    
+Build the "release" configuration for a webpage (output as a folder)
+
+    make webpage
+    
+Build the "debug" configuration for a webpage (output as a folder)
+
+    make webpage-debug
+
+Cleans the build directory
+
+    make clean
+    
