@@ -15,6 +15,13 @@ Requirements
 * Java 7
 * Postgres
 
+Ubuntu Linux
+--------
+
+    sudo apt-get install postgresql postgresql-contrib ant openjdk-7-jdk
+    sudo ln -s /usr/bin/pg /usr/bin/postgres
+    sudo ln -s /usr/lib/postgresql/9.3/bin/initdb /usr/bin/initdb
+
 Mac OS X
 --------
 
@@ -45,7 +52,7 @@ Running/Building
 * `postgres -D build/postgres` starts Postgres using that local database
 * (ONCE): `psql -c 'create database mitro;' postgres` creates the database named `mitro`
 * `ant server` builds and starts the server.
-* Connect to https://localhost:8443/mitro-core/
+* Connect to https://localhost:8443/mitro-core/admin
 
 
 Regression Test
